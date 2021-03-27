@@ -1,10 +1,8 @@
-# modern-opengl-oss-template
+# Attribute Vertex Clouds
+[![CodeFactor](https://www.codefactor.io/repository/github/snowapril/convex-occluders-with-inner-conservative-rasterization/badge)](https://www.codefactor.io/repository/github/snowapril/convex-occluders-with-inner-conservative-rasterization)[![Codacy Badge](https://app.codacy.com/project/badge/Grade/755ac32c60cd4fdd80934f7de453838d)](https://www.codacy.com/gh/Snowapril/convex-occluders-with-inner-conservative-rasterization/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Snowapril/convex-occluders-with-inner-conservative-rasterization&amp;utm_campaign=Badge_Grade)
 
-[![CodeFactor](https://www.codefactor.io/repository/github/snowapril/modern-opengl-oss-template/badge)](https://www.codefactor.io/repository/github/snowapril/modern-opengl-oss-template)
-
-This is opengl 4.5 template project for building several test project.
-All you need to do for new project is Updating Sample app and Sample renderer classes.
-If you need to modify framework codes, do it first and sharing code through pull-requuest please.
+This project implements convex-occluders-with-inner-conservative-rasterization in the Book `GPU Zen: Advanced Rendering Techniques`
+![GPU Zen Thumbnail](https://m.media-amazon.com/images/I/51V7mGAYt3L.jpg)
 
 ## dependency
 *   cxxopts
