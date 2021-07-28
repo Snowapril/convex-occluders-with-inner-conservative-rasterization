@@ -1,15 +1,15 @@
-#ifndef SAMPLE_RENDERER_HPP
-#define SAMPLE_RENDERER_HPP
+#ifndef CONVEX_OCCLUDER_RENDERER_HPP
+#define CONVEX_OCCLUDER_RENDERER_HPP
 
 #include <GL3/Renderer.hpp>
 
-class SampleRenderer : public GL3::Renderer
+class ConvexOccluderRenderer : public GL3::Renderer
 {
 public:
 	//! Default constructor
-	SampleRenderer();
+	ConvexOccluderRenderer();
 	//! Default desctrutor
-	~SampleRenderer();
+	~ConvexOccluderRenderer();
 protected:
 	bool OnInitialize(const cxxopts::ParseResult& configure) override;
 	void OnCleanUp() override;
@@ -20,4 +20,4 @@ protected:
 	void OnProcessResize(int width, int height) override;
 };
 
-#endif //! end of SampleRenderer.hpp
+#endif //! end of ConvexOccluderRenderer.hpp

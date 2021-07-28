@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cxxopts/cxxopts.hpp>
 
-#include <SampleRenderer.hpp>
+#include <ConvexOccluderRenderer.hpp>
 #include <GL3/Window.hpp>
 #include <glfw/glfw3.h>
 #include <chrono>
@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
 		exit(0);
 	}
 
-	auto renderer = std::make_unique<SampleRenderer>();
+	auto renderer = std::make_unique<ConvexOccluderRenderer>();
 	if (!renderer->Initialize(result))
 	{
 		std::cerr << "Failed to initialize the Renderer" << std::endl;

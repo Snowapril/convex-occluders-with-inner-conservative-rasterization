@@ -1,19 +1,19 @@
-#ifndef SAMPLE_APP_HPP
-#define SAMPLE_APP_HPP
+#ifndef CONVEX_OCCLUDER_APP_HPP
+#define CONVEX_OCCLUDER_APP_HPP
 
 #include <GL3/Application.hpp>
 
-class SampleApp : public GL3::Application
+class ConvexOccluderApp : public GL3::Application
 {
 public:
 	//! Default constructor
-	SampleApp();
+	ConvexOccluderApp();
 	//! Default desctrutor
-	~SampleApp();
+	~ConvexOccluderApp();
 	//! Returns overrided Application title
 	const char* GetAppTitle() const override
 	{
-		return "Sample Application";
+		return "Convex Occluders with Inner Conservative Rasterization";
 	}
 protected:
 	bool OnInitialize(std::shared_ptr<GL3::Window> window, const cxxopts::ParseResult& configure) override;
@@ -26,4 +26,4 @@ protected:
 private:
 };
 
-#endif //! end of SampleApp.hpp
+#endif //! end of ConvexOccluderApp.hpp
