@@ -22,10 +22,7 @@ include_directories(Libraries)
 include_directories(Libraries/glad)
 include_directories(Libraries/glm)
 include_directories(Libraries/imgui)
-include_directories(Libraries/tinygltf)
-include_directories(Libraries/tinyobjloader)
 include_directories(Libraries/glfw/include)
-include_directories(Libraries/draco/src)
 
 # Compile options
 include(Builds/CMake/CompileOptions.cmake)
@@ -43,11 +40,7 @@ set(RESOURCES_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Resources")
 
 # Project modules
 add_subdirectory(Libraries/glad)
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "")
 add_subdirectory(Libraries/glfw)
 add_subdirectory(Libraries/imgui)
-add_subdirectory(Libraries/tinyobjloader)
-
-add_subdirectory(Libraries/draco)
-include_directories(${PROJECT_BINARY_DIR} /draco)
-
 add_subdirectory(Sources)
